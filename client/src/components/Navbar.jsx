@@ -8,7 +8,7 @@ function Navbar() {
     <header className="navbar-shell">
       <div className="container navbar">
         <Link to="/" className="brand-mark">
-          Library Hub
+          Grow Book
         </Link>
 
         <nav className="nav-links">

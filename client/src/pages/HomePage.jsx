@@ -7,13 +7,13 @@ import { getBooks } from '../services/bookService';
 import { borrowBook } from '../services/borrowService';
 
 function HomePage() {
-  const { token, isAuthenticated } = useAuth();
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [message, setMessage] = useState('');
   const [busyBookId, setBusyBookId] = useState('');
-
+  
+  const { user, isAuthenticated, token } = useAuth();
   const loadBooks = async () => {
     try {
       setLoading(true);
@@ -54,7 +54,7 @@ function HomePage() {
       <div className="hero-panel">
         <div>
           <span className="eyebrow"></span>
-          <h1> HELLO Library Hub</h1>
+          <h1> Hello {user?.username?.[0]?.toUpperCase() + user?.username?.slice(1) || ""}</h1>
 
         </div>
       </div>
