@@ -1,8 +1,8 @@
-# 📚 Full Stack Library Management System
+# Full Stack Library Management System
 
 A complete library management system built with MERN stack (MongoDB, Express, React, Node.js).
 
-## 🚀 Features
+## Features
 
 ### Backend
 - User authentication with JWT
@@ -22,7 +22,7 @@ A complete library management system built with MERN stack (MongoDB, Express, Re
 - React Router for navigation
 - Toast notifications
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 **Backend:**
 - Node.js
